@@ -63,6 +63,41 @@ Relevant environments include IoT, automotive, healthcare, manufacturing and cri
 - [EMB3D home](https://emb3d.mitre.org/)
 - [Background and model](https://emb3d.mitre.org/background/)
 
+## ATT&CK v19 / v19.2 — 2026 structural changes
+
+ATT&CK v19, released in April 2026 and subsequently updated within the v19 line, introduced one of the largest Enterprise taxonomy changes in years.
+
+### Defense Evasion split
+
+The former broad **Defense Evasion** tactic was split into:
+
+- **Stealth** — behavior intended to remain hidden or blend with legitimate activity;
+- **Defense Impairment (TA0112)** — behavior that directly degrades, disables or undermines defensive mechanisms and telemetry.
+
+Operationally, that distinction matters:
+
+```text
+Stealth
+  → "the defensive system is present, but the behavior is hard to distinguish"
+
+Defense Impairment
+  → "the defensive system or telemetry itself is being degraded"
+```
+
+ATT&CK v19 also expanded ICS with sub-techniques and continued the transition toward richer **Detection Strategies and Analytics**.
+
+Current versioning and release notes should always be checked at [ATT&CK Updates](https://attack.mitre.org/resources/updates/updates-april-2026/) and [Version History](https://attack.mitre.org/resources/versions/).
+
+### Embedded systems
+
+MITRE's [Embedded Systems Threat Matrix (ESTM)](https://estm.mitre.org/) is also relevant to this ecosystem.
+
+Use the distinction:
+
+- **EMB3D** → properties, threats and mitigations for embedded devices;
+- **ESTM** → tactics and techniques against embedded systems;
+- **ATT&CK for ICS** → observed adversary behavior in industrial-control environments.
+
 ## Center for Threat-Informed Defense: current high-value projects
 
 CTID extends ATT&CK into practical threat-informed-defense workflows. These projects are especially valuable because they turn behavioral intelligence into measurable defensive decisions.
