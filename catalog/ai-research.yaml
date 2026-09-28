@@ -1,0 +1,132 @@
+version: 1
+resources:
+  - name: ACTIC
+    url: https://doi.org/10.1049/cmu2.70162
+    category: cti-knowledge-graph
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: academic
+    lifecycle: research
+    owner: Liu et al.
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Build local CTI and attack knowledge graphs from unstructured reports using a locally deployed LLM.
+    tags: [llm, knowledge-graph, attack, local-ai]
+
+  - name: TACTIC-KG
+    url: https://arxiv.org/abs/2607.05001
+    category: cti-knowledge-graph
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: research
+    owner: Bouchiha and Blanc
+    evidence_level: preprint
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Construct CTI knowledge graphs with specialized lightweight LLM agents for extraction, typing, verification and curation.
+    notes: Preprint; evaluate independently before production use.
+    tags: [agentic-ai, knowledge-graph, cti, preprint]
+
+  - name: TGCM
+    url: https://arxiv.org/abs/2606.18651
+    category: campaign-analysis
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: research
+    owner: Wong et al.
+    evidence_level: preprint
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Research disentanglement of interleaved APT technique sequences into latent campaigns.
+    notes: Preprint; useful as research direction rather than operational baseline.
+    tags: [apt, campaign, sequence, preprint]
+
+  - name: Federated Learning + Zero-Trust CTI
+    url: https://doi.org/10.1155/jcnc/8893656
+    category: collaborative-cti
+    source_class: A
+    intelligence_levels: [strategic, technical]
+    access: open-access
+    lifecycle: research
+    owner: Chamkoori and Ghasemi
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Explore privacy-preserving collaborative CTI using federated learning with continuous zero-trust verification.
+    notes: Simulation-oriented research evaluated on CIC-IDS2017.
+    tags: [federated-learning, zero-trust, privacy, sharing]
+
+  - name: Quantifying cyber threat using Bayesian statistical analysis
+    url: https://doi.org/10.1007/s10207-026-01220-6
+    category: quantitative-cti
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: open-access
+    lifecycle: research
+    owner: Thevaratnam and Rezaeifar
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Update system-specific threat probabilities as new CTI evidence arrives using Bayesian analysis.
+    tags: [bayes, risk, cti, prioritization]
+
+  - name: False alarms, real damage
+    url: https://doi.org/10.1016/j.future.2026.108603
+    category: cti-pipeline-security
+    source_class: A
+    intelligence_levels: [strategic, tactical]
+    access: open-access
+    lifecycle: research
+    owner: Research publication
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Study adversarial evasion, flooding and poisoning risks in text-based automated CTI pipelines.
+    tags: [poisoning, adversarial-ai, cti, llm]
+
+  - name: PHANTOM
+    url: https://doi.org/10.1007/s10207-026-01323-0
+    category: cyber-deception
+    source_class: A
+    intelligence_levels: [tactical, technical]
+    access: open-access
+    lifecycle: research
+    owner: Abraham Itzhak Weinberg
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Research organization-context-aware honeytoken generation and evaluation.
+    notes: Controlled evaluation with important limitations; do not treat reported detection resistance as universal real-world performance.
+    tags: [deception, honeytoken, zero-trust]
+
+  - name: CYREM-ORM
+    url: https://doi.org/10.1016/j.cose.2026.104873
+    category: cyber-risk-economics
+    source_class: A
+    intelligence_levels: [strategic]
+    access: open-access
+    lifecycle: research
+    owner: Research publication
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Translate technical cyber risk and CTI into traceable financial risk estimates for business decision-making.
+    tags: [risk, fair, economics, business]
+
+  - name: Synthetic APTs - TTP attribution stress test
+    url: https://arxiv.org/abs/2606.07158
+    category: attribution-research
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: free
+    lifecycle: research
+    owner: Balassone et al.
+    evidence_level: preprint
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Examine how AI-driven adversary emulation can imitate known actor tradecraft and weaken TTP-only attribution assumptions.
+    notes: Research stress test, not evidence that all TTP-based attribution is invalid.
+    tags: [ai, attribution, ttp, preprint]
