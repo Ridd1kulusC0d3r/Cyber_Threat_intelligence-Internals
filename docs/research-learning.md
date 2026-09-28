@@ -21,7 +21,7 @@ These should generally be treated as high-value primary or authoritative sources
 | [CERT-FR](https://www.cert.ssi.gouv.fr/) | France | A | Alerts, advisories and threat reports |
 | [BSI CERT-Bund](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Reaktion/CERT-Bund/cert-bund_node.html) | Germany | A | National CERT resources |
 | [CERT.br](https://cert.br/) | Brazil | A | Incident statistics, advisories and Internet security |
-| [CTIR Gov](https://www.gov.br/ctir/pt-br) | Brazil | A | Brazilian federal government CTI/incident response |
+| [CTIR Gov](https://www.gov.br/gsi/pt-br/assuntos/ctir) | Brazil | A | Brazilian federal government CTI/incident response |
 | [CAIS/RNP](https://www.rnp.br/sistema-rnp/cais) | Brazil | A | Academic/research network security and advisories |
 
 ## Original vendor threat research
@@ -41,7 +41,7 @@ Use vendor reports as **original research**, but preserve the vendor's naming sc
 | [Proofpoint Threat Insight](https://www.proofpoint.com/us/blog/threat-insight) | B | Email threats, initial access and actor clusters |
 | [Trend Micro Research](https://www.trendmicro.com/en_us/research.html) | B | Campaigns, cloud, vulnerabilities and cybercrime |
 | [Check Point Research](https://research.checkpoint.com/) | B | Malware, vulnerabilities and campaigns |
-| [Sophos X-Ops](https://news.sophos.com/en-us/category/threat-research/) | B | Incident response, ransomware and malware |
+| [Sophos X-Ops](https://www.sophos.com/en-us/blog?taxonomy_blog_category=Threat+Research) | B | Incident response, ransomware and malware |
 | [FortiGuard Labs](https://www.fortinet.com/fortiguard/labs) | B | Threat landscape, malware and botnet research |
 | [Elastic Security Labs](https://www.elastic.co/security-labs) | B | Malware, detections and telemetry-driven research |
 | [Rapid7 Research](https://www.rapid7.com/research/) | B | Vulnerabilities, exploitation and attacker behavior |
@@ -58,9 +58,9 @@ Use vendor reports as **original research**, but preserve the vendor's naming sc
 | Source | Class | Focus |
 |---|---:|---|
 | [Wiz Research](https://www.wiz.io/research) | B | Cloud vulnerabilities and attack paths |
-| [Orca Research Pod](https://orca.security/resources/blog/category/research/) | B | Cloud exposures and vulnerabilities |
-| [Aqua Nautilus](https://www.aquasec.com/blog/category/nautilus/) | B | Containers, Kubernetes, cloud-native threats |
-| [Sysdig Threat Research](https://sysdig.com/blog/category/threat-research/) | B | Runtime, containers, cloud and cryptomining campaigns |
+| [Orca Research Pod](https://orca.security/resources/category/research/) | B | Cloud exposures and vulnerabilities |
+| [Aqua Nautilus](https://www.aquasec.com/blog/) | B | Containers, Kubernetes, cloud-native threats |
+| [Sysdig Threat Research](https://sysdig.com/blog/topic/threat-research/) | B | Runtime, containers, cloud and cryptomining campaigns |
 | [Unit 42 Cloud Threat Research](https://unit42.paloaltonetworks.com/category/cloud/) | B | Cloud actor behavior and attack paths |
 | [Microsoft Security Blog - Cloud Security](https://www.microsoft.com/en-us/security/blog/topic/cloud-security/) | B | Cloud identity and platform threats |
 
@@ -114,7 +114,7 @@ These are useful for **discovery and situational awareness**, not as a replaceme
 A minimal regional watchlist for CTI analysts operating in Brazil or Latin America:
 
 1. [CERT.br](https://cert.br/) — Internet incident statistics, abuse handling and technical material.
-2. [CTIR Gov](https://www.gov.br/ctir/pt-br) — Brazilian federal-government cyber coordination and alerts.
+2. [CTIR Gov](https://www.gov.br/gsi/pt-br/assuntos/ctir) — Brazilian federal-government cyber coordination and alerts.
 3. [CAIS/RNP](https://www.rnp.br/sistema-rnp/cais) — Academic/research-network security.
 4. [ESET WeLiveSecurity](https://www.welivesecurity.com/) — Frequent LATAM-focused research.
 5. [Kaspersky Securelist](https://securelist.com/) — Global and regional threat research.

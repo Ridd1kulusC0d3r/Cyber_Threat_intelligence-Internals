@@ -19,7 +19,7 @@ Back to [README](../README.md).
 | [Anomali](https://www.anomali.com/) | B | Commercial | TIP and threat-intelligence management |
 | [Recorded Future](https://www.recordedfuture.com/) | B | Commercial | External intelligence and risk analysis |
 | [Google Threat Intelligence](https://cloud.google.com/security/products/threat-intelligence) | B | Commercial | Threat research, malware and infrastructure intelligence |
-| [Microsoft Defender Threat Intelligence](https://learn.microsoft.com/defender/threat-intelligence/) | B | Commercial | Infrastructure and threat-actor intelligence |
+| [Microsoft Defender Threat Intelligence](https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | B | Commercial | Infrastructure and threat-actor intelligence |
 | [CrowdStrike Falcon Intelligence](https://www.crowdstrike.com/en-us/platform/threat-intelligence/) | B | Commercial | Adversary and campaign intelligence |
 | [Flashpoint](https://flashpoint.io/) | B | Commercial | Threat, fraud and illicit-community intelligence |
 | [KELA](https://www.kelacyber.com/) | B | Commercial | Cybercrime and external threat intelligence |
@@ -60,7 +60,7 @@ Back to [README](../README.md).
 | [crt.sh](https://crt.sh/) | C | Free | Certificate Transparency pivots |
 | [SecurityTrails](https://securitytrails.com/) | B | Freemium / Commercial | DNS and infrastructure history |
 | [ICANN Lookup](https://lookup.icann.org/) | A | Free | Registration data and RDAP/WHOIS context |
-| [BGPView](https://bgpview.io/) | C | Free | ASN, prefix and BGP context |
+| [BGPView](https://bgp.tools/) | C | Free | ASN, prefix and BGP context |
 | [IPinfo](https://ipinfo.io/) | B | Freemium / Commercial | IP ownership, ASN and geolocation metadata |
 | [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search) | B | Free | Check known unsafe web resources |
 

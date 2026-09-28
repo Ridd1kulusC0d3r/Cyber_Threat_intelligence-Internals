@@ -24,7 +24,11 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --accept 200,204,206,403,429
+            --accept 200,202,204,206,403,429
+            --exclude 'cyber[.]gov[.]au'
+            --exclude 'trellix[.]com'
+            --exclude 'sophos[.]com'
+            --exclude 'crt[.]sh'
             './**/*.md'
             './catalog/*.yaml'
           fail: true

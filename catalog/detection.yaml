@@ -70,7 +70,7 @@ resources:
     use: Track ATT&CK visibility, data sources and detection coverage with gap analysis.
     tags: [attack, detection, visibility, gap-analysis]
 
-  - name: Summiting the Pyramid v4
+  - name: Summiting the Pyramid (2026)
     url: https://center-for-threat-informed-defense.github.io/summiting-the-pyramid/
     category: detection-engineering
     source_class: A

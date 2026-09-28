@@ -52,7 +52,7 @@ This repository makes those distinctions explicit.
 | Influence operations | [DISARM](https://www.disarm.foundation/framework) |
 | Agentic CTI | [Agentic CTI guide](docs/agentic-cti.md) |
 | 2026 research | [Frontier Research radar](docs/frontier-research-2026.md) |
-| Brazil / LATAM | [CERT.br](https://cert.br/) · [CTIR Gov](https://www.gov.br/ctir/pt-br) · [CAIS/RNP](https://www.rnp.br/sistema-rnp/cais) |
+| Brazil / LATAM | [CERT.br](https://cert.br/) · [CTIR Gov](https://www.gov.br/gsi/pt-br/assuntos/ctir) · [CAIS/RNP](https://www.rnp.br/sistema-rnp/cais) |
 
 ## Analyst tracks
 
