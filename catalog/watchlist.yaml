@@ -90,8 +90,6 @@ resources:
     notes: No sufficiently authoritative primary source was located during this review.
     tags: [llm, adversarial-ai, cti]
 
-  - name: APT-CGLP
-    url: ""
     category: provenance-research
     source_class: C
     intelligence_levels: [tactical, technical]
@@ -135,8 +133,6 @@ resources:
     notes: Verify official project source before promotion.
     tags: [pivoting, infrastructure, hunting]
 
-  - name: CTI-Thinker
-    url: ""
     category: cti-knowledge-graph
     source_class: C
     intelligence_levels: [operational, tactical]
@@ -179,3 +175,18 @@ resources:
     use: Candidate Brazilian CTI platform with AI-assisted investigative workflows.
     notes: Public secondary material was located, but an authoritative product source adequate for catalog promotion was not confirmed in this review.
     tags: [brazil, cti, agentic-ai]
+
+  - name: Knowledge-Driven ATT&CK/D3FEND Purple Teaming
+    url: https://roc.cnam.fr/?page_id=196
+    category: purple-team-research
+    source_class: A
+    intelligence_levels: [tactical, technical]
+    access: academic
+    lifecycle: watchlist
+    owner: CNAM / C&ESAR 2026 authors
+    evidence_level: preprint
+    verification: provisional
+    last_reviewed: "2026-09-28"
+    use: Model the dependency chain from ATT&CK techniques through telemetry, analytics and sensors to measurable detection improvement.
+    notes: Listed for C&ESAR 2026, scheduled for November 2026. Treat as provisional until the conference publication is complete.
+    tags: [attack, d3fend, purple-team, detection-engineering, knowledge-graph]
