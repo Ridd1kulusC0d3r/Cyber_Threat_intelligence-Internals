@@ -63,6 +63,10 @@ A historically important project is not automatically a good choice for a new de
 - [Ransomware intelligence](docs/ransomware-intelligence.md)
 - [Curated community collections](docs/curated-collections.md)
 
+### Automation layer
+- [Machine-readable catalog](catalog/README.md)
+- [Core resources YAML](catalog/core.yaml)
+
 ## Analyst workflow
 
 ```text
