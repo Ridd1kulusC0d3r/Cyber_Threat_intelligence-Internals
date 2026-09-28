@@ -41,3 +41,17 @@ resources:
     last_reviewed: "2026-09-27"
     use: Explore relationships, histories, profiles and ransom-note information for hundreds of ransomware groups.
     tags: [ransomware, groups, relationships, ransom-notes]
+
+  - name: Open_Source-CTI-Tooling
+    url: https://github.com/Chick3nHawk01/Open_Source-CTI-Tooling
+    category: community-collection
+    source_class: C
+    intelligence_levels: [strategic, operational, tactical, technical]
+    access: open-source
+    lifecycle: active
+    owner: Chick3nHawk01
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Discover open-source CTI tooling organized across operational, tactical, strategic and utility categories.
+    tags: [cti, tooling, bookmarks, community]
