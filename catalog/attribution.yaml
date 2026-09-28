@@ -1,0 +1,128 @@
+version: 1
+resources:
+  - name: Pyramid of Pain
+    url: https://www.sans.org/tools/the-pyramid-of-pain
+    category: intelligence-model
+    source_class: C
+    intelligence_levels: [tactical, technical]
+    access: free
+    lifecycle: reference
+    owner: David Bianco / SANS
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Prioritize indicators and behaviors by the cost imposed on adversaries when defenders deny them.
+    tags: [pyramid-of-pain, indicators, ttp]
+
+  - name: Diamond Model of Intrusion Analysis
+    url: https://www.threatintel.academy/diamond/
+    category: intrusion-analysis
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: reference
+    owner: Caltagirone, Pendergast and Betz
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Model adversary, capability, infrastructure and victim relationships as intrusion events.
+    tags: [diamond-model, attribution, graph]
+
+  - name: Unit 42 Attribution Framework
+    url: https://unit42.paloaltonetworks.com/unit-42-attribution-framework/
+    category: attribution
+    source_class: B
+    intelligence_levels: [operational, strategic]
+    access: free
+    lifecycle: active
+    owner: Palo Alto Networks Unit 42
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Mature activity from clusters to temporary groups and formally named actors using structured evidence.
+    tags: [attribution, diamond-model, admiralty]
+
+  - name: ICD 203 Analytic Standards
+    url: https://www.dni.gov/files/documents/ICD/ICD-203.pdf
+    category: analytic-standards
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: free
+    lifecycle: active
+    owner: US Office of the Director of National Intelligence
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Standardize likelihood language, confidence and explanation of analytic uncertainty.
+    tags: [confidence, probability, estimative-language]
+
+  - name: Analysis of Competing Hypotheses
+    url: https://www.cia.gov/resources/csi/books-monographs/psychology-of-intelligence-analysis-2/
+    category: structured-analytic-technique
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: free
+    lifecycle: reference
+    owner: Richards J. Heuer Jr. / CIA CSI
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Challenge leading explanations by emphasizing disconfirming and diagnostic evidence.
+    tags: [ach, sat, bias]
+
+  - name: Critical review of ACH
+    url: https://doi.org/10.1080/02684527.2024.2304934
+    category: analytic-research
+    source_class: A
+    intelligence_levels: [strategic]
+    access: academic
+    lifecycle: active
+    owner: Wilcox and Mandel
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Evaluate empirical evidence for and limitations of Analysis of Competing Hypotheses.
+    tags: [ach, evidence, cognitive-bias]
+
+  - name: ATTRACT
+    url: https://github.com/nanda-rani/ATTRACT
+    category: attribution-research
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: open-source
+    lifecycle: research
+    owner: Research project
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Attribute APT activity using ordered and repeated TTP sequences mapped to kill-chain phases.
+    tags: [attribution, ttp, kill-chain]
+
+  - name: ThreatMAMBA
+    url: https://doi.org/10.1109/TIFS.2026.3685967
+    category: attribution-research
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: academic
+    lifecycle: research
+    owner: Ge et al.
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Study temporally robust cyber-threat attribution while attacks are still evolving.
+    tags: [attribution, temporal, knowledge-graph, mamba]
+
+  - name: Synthetic APTs
+    url: https://arxiv.org/abs/2606.07158
+    category: attribution-research
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: free
+    lifecycle: research
+    owner: Balassone et al.
+    evidence_level: preprint
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Explore how AI-driven adversary emulation can reduce the uniqueness of TTP fingerprints.
+    notes: Preprint; treat conclusions as research evidence, not settled doctrine.
+    tags: [ai, attribution, ttp, preprint]
