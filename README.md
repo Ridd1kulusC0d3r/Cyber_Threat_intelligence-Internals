@@ -112,6 +112,16 @@ The static interface in `site/` provides client-side search and filters for cate
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the complete design.
 
+### GitHub Pages activation
+
+The `site/` UI and deployment workflow are ready. GitHub requires a one-time repository setting before Actions can publish:
+
+1. Open **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Run **Deploy GitHub Pages** once from Actions, or push another change to `main`.
+
+Until Pages is enabled, the workflow still builds the catalog and exits successfully without attempting deployment.
+
 ## Analyst workflow
 
 ```text
