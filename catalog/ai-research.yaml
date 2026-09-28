@@ -116,21 +116,6 @@ resources:
     use: Translate technical cyber risk and CTI into traceable financial risk estimates for business decision-making.
     tags: [risk, fair, economics, business]
 
-  - name: Synthetic APTs - TTP attribution stress test
-    url: https://arxiv.org/abs/2606.07158
-    category: attribution-research
-    source_class: A
-    intelligence_levels: [strategic, operational]
-    access: free
-    lifecycle: research
-    owner: Balassone et al.
-    evidence_level: preprint
-    verification: verified
-    last_reviewed: "2026-09-27"
-    use: Examine how AI-driven adversary emulation can imitate known actor tradecraft and weaken TTP-only attribution assumptions.
-    notes: Research stress test, not evidence that all TTP-based attribution is invalid.
-    tags: [ai, attribution, ttp, preprint]
-
   - name: AttacKG
     url: https://github.com/li-zhenyuan/AttacKG
     category: cti-knowledge-graph
