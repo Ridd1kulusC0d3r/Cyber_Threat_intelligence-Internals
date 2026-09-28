@@ -1,0 +1,43 @@
+version: 1
+resources:
+  - name: AnnoCTR
+    url: https://github.com/boschresearch/anno-ctr-lrec-coling-2024
+    category: cti-dataset
+    source_class: A
+    intelligence_levels: [tactical, technical]
+    access: cc-by-sa-4.0
+    lifecycle: reference
+    owner: Bosch Research and academic collaborators
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Train and evaluate extraction/linking of entities, tactics and techniques from cyber-threat reports.
+    tags: [dataset, ner, attack, nlp]
+
+  - name: APTnotes
+    url: https://github.com/aptnotes/data
+    category: cti-dataset
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: APTnotes community
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Reference and index historical public APT reporting.
+    tags: [apt, reports, corpus]
+
+  - name: DARPA Transparent Computing
+    url: https://github.com/darpa-i2o/Transparent-Computing
+    category: provenance-dataset
+    source_class: A
+    intelligence_levels: [technical, tactical]
+    access: research
+    lifecycle: reference
+    owner: DARPA
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Support research on whole-system provenance, attack reconstruction and APT detection.
+    tags: [darpa, provenance, apt, dataset]

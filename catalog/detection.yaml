@@ -1,0 +1,100 @@
+version: 1
+resources:
+  - name: YAMAGoya
+    url: https://github.com/JPCERTCC/YAMAGoya
+    category: endpoint-detection
+    source_class: A
+    intelligence_levels: [tactical, technical]
+    access: open-source
+    lifecycle: active
+    owner: JPCERT/CC
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Apply Sigma and YARA to ETW-based real-time Windows monitoring and memory scanning.
+    tags: [sigma, yara, etw, memory, windows]
+
+  - name: Atomic Red Team
+    url: https://github.com/redcanaryco/atomic-red-team
+    category: adversary-emulation
+    source_class: B
+    intelligence_levels: [tactical]
+    access: open-source
+    lifecycle: active
+    owner: Red Canary
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Validate telemetry and detections with small ATT&CK-mapped behavior tests in authorized labs.
+    tags: [atomic-red-team, attack, validation]
+
+  - name: Stratus Red Team
+    url: https://github.com/DataDog/stratus-red-team
+    category: cloud-validation
+    source_class: B
+    intelligence_levels: [tactical]
+    access: open-source
+    lifecycle: active
+    owner: Datadog
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Validate cloud detections using controlled offensive behavior simulations.
+    tags: [cloud, aws, azure, gcp, validation]
+
+  - name: Splunk Attack Range
+    url: https://github.com/splunk/attack_range
+    category: detection-lab
+    source_class: B
+    intelligence_levels: [tactical, technical]
+    access: open-source
+    lifecycle: active
+    owner: Splunk
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Build instrumented detection labs and generate security telemetry for rule development.
+    tags: [splunk, lab, detection]
+
+  - name: DeTT&CT
+    url: https://github.com/rabobank-cdc/DeTTECT
+    category: detection-engineering
+    source_class: C
+    intelligence_levels: [tactical]
+    access: open-source
+    lifecycle: active
+    owner: Rabobank CDC
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Track ATT&CK visibility, data sources and detection coverage with gap analysis.
+    tags: [attack, detection, visibility, gap-analysis]
+
+  - name: Summiting the Pyramid v4
+    url: https://center-for-threat-informed-defense.github.io/summiting-the-pyramid/
+    category: detection-engineering
+    source_class: A
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE CTID
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Build behavior-focused detections and measure implementation coverage and detection quality.
+    tags: [detection, pyramid-of-pain, analytics]
+
+  - name: Glimmer-Sentry-30B
+    url: https://huggingface.co/EryriLabs/Glimmer-Sentry-30B
+    category: detection-ai
+    source_class: C
+    intelligence_levels: [tactical, technical]
+    access: open-model
+    lifecycle: emerging
+    owner: EryriLabs
+    evidence_level: community
+    verification: provisional
+    last_reviewed: "2026-09-27"
+    use: Explore local AI assistance for Sigma, KQL, SPL, YARA and Wazuh rule workflows.
+    notes: Community model; reported benchmark results are maintainer-provided and should be independently validated.
+    tags: [llm, sigma, yara, local-ai]
