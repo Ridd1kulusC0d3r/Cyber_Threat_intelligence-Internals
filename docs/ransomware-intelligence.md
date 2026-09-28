@@ -30,7 +30,7 @@ Ransomware intelligence should separate **victim/leak monitoring**, **incident-d
 |---|---:|---|
 | [Google Threat Intelligence](https://cloud.google.com/blog/topics/threat-intelligence) | B | Actors, malware, initial access and campaigns |
 | [Unit 42](https://unit42.paloaltonetworks.com/) | B | Ransomware, incident response and actor activity |
-| [Sophos X-Ops](https://news.sophos.com/en-us/category/threat-research/) | B | Ransomware tradecraft and incident-derived research |
+| [Sophos X-Ops](https://www.sophos.com/en-us/blog?taxonomy_blog_category=Threat+Research) | B | Ransomware tradecraft and incident-derived research |
 | [Microsoft Threat Intelligence](https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/) | B | Identity, access, actor and ecosystem analysis |
 | [Cisco Talos](https://blog.talosintelligence.com/) | B | Malware and infrastructure research |
 | [SentinelLabs](https://www.sentinelone.com/labs/) | B | Malware, operators and campaign analysis |
