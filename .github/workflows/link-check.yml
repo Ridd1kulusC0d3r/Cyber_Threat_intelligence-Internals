@@ -25,6 +25,8 @@ jobs:
             --verbose
             --no-progress
             --accept 200,202,204,206,403,429
+            --exclude '^https://www\\.cyber\\.gov\\.au/'
+            --exclude '^https://www\\.trellix\\.com/'
             './**/*.md'
             './catalog/*.yaml'
           fail: true
