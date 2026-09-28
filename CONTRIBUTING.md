@@ -16,6 +16,8 @@ Choose the shard that best fits the resource:
 - `vendors.yaml` — commercial/vendor platforms;
 - `datasets.yaml` — datasets and corpora;
 - `specialized.yaml` — specialized domains;
+- `ot-ics.yaml` — OT/ICS, CyOTE, industrial sharing and cyber-physical intelligence;
+- `probabilistic.yaml` — Bayesian CTI, probabilistic attribution and quantitative uncertainty;
 - `watchlist.yaml` — promising but insufficiently verified leads.
 
 ## Resource fields
@@ -138,4 +140,6 @@ python scripts/build_catalog.py
 - [ ] Performance claims are attributed.
 - [ ] Archived/legacy projects are not presented as current defaults.
 - [ ] Watchlist items are not mixed into verified operational resources.
+- [ ] Future conference papers are not labeled as completed peer-reviewed work.
+- [ ] Duplicate resource names have been reconciled rather than copied across shards.
 - [ ] `python scripts/build_catalog.py --check` passes.
