@@ -14,6 +14,8 @@ The files in this directory are the repository's structured source of truth.
 | `vendors.yaml` | Vendor platforms and product capabilities |
 | `datasets.yaml` | CTI and provenance datasets |
 | `specialized.yaml` | Specialized intelligence domains |
+| `ot-ics.yaml` | OT/ICS intelligence, collective defense and CyOTE |
+| `probabilistic.yaml` | Bayesian CTI, quantitative attribution and uncertainty |
 | `watchlist.yaml` | Interesting leads not yet sufficiently verified |
 
 ## Schema
