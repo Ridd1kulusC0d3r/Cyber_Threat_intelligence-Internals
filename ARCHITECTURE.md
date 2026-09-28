@@ -75,6 +75,9 @@ catalog/
 ├── ai-research.yaml
 ├── vendors.yaml
 ├── datasets.yaml
+├── specialized.yaml
+├── ot-ics.yaml
+├── probabilistic.yaml
 └── watchlist.yaml
 ```
 
@@ -106,3 +109,62 @@ Recommended fields:
 The website is a **view** of the catalog. Markdown documentation is an **analysis layer**. Neither should become a second source of truth for resource metadata.
 
 That prevents the deeply traditional documentation failure mode where three pages disagree about whether a project is active, archived, free, commercial, or possibly undead.
+
+
+## Analyst views
+
+The web interface exposes opinionated lenses over the same canonical resource set:
+
+- OT / ICS;
+- graph & provenance;
+- probabilistic CTI;
+- detection / hunting;
+- ransomware;
+- AI / agentic CTI;
+- watchlist.
+
+These views are query logic, not duplicated datasets.
+
+## Specialized analytical pipelines
+
+### OT / ICS
+
+```text
+process knowledge
+      ↓
+operator + sensor telemetry
+      ↓
+STIX / graph normalization
+      ↓
+ATT&CK for ICS
+      ↓
+Bayesian progression / attack-chain estimation
+      ↓
+process-consequence prioritization
+```
+
+### Graph / provenance
+
+```text
+CTI text ──► intelligence / behavior graph
+                         │
+                         ▼
+system telemetry ──► provenance graph
+                         │
+                         ▼
+                 semantic / subgraph match
+```
+
+### Probabilistic CTI
+
+```text
+prior
+  + evidence
+  + dependency model
+       ↓
+posterior
+       ↓
+collection / response priority
+```
+
+The architecture intentionally keeps those analysis models in documentation and metadata while preserving YAML as the resource source of truth.
