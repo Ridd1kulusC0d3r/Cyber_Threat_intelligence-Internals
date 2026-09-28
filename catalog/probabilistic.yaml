@@ -1,0 +1,60 @@
+version: 1
+resources:
+  - name: Quantifying Cyber Threat Using Bayesian Statistical Analysis
+    url: https://doi.org/10.1007/s10207-026-01220-6
+    category: probabilistic-cti
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: open-access
+    lifecycle: research
+    owner: Thevaratnam and Rezaeifar
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Update system-specific threat probabilities as CTI evidence arrives instead of relying on static severity alone.
+    tags: [bayes, threat-probability, risk, prioritization]
+
+  - name: APT Attribution Using Heterogeneous GNN with Contextual CTI
+    url: https://doi.org/10.3390/electronics14234597
+    category: probabilistic-attribution
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: open-access
+    lifecycle: research
+    owner: Mead and Arabo
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Attribute APT activity with a tripartite graph linking actors, contextualized TTPs and Cyber Kill Chain stages.
+    notes: Published in 2025; included because it directly supports the 2026 graph-attribution research track.
+    tags: [attribution, gnn, aptnotes, sbert, kill-chain]
+
+  - name: CAL-CTI
+    url: https://doi.org/10.1109/ICCSDFAI70505.2026.11648025
+    category: adversarial-cti
+    source_class: A
+    intelligence_levels: [tactical, technical]
+    access: academic
+    lifecycle: research
+    owner: Lirsi, Mandar and Bnslimane
+    evidence_level: peer-reviewed
+    verification: provisional
+    last_reviewed: "2026-09-28"
+    use: Research continual adversarial learning for CTI pipelines under changing distributions and poisoning pressure.
+    notes: DOI and conference record were located; implementation and reported performance should be independently reproduced before operational adoption.
+    tags: [continual-learning, adversarial-ai, securebert, poisoning, cti]
+
+  - name: Bayesian Scoring Framework over STIX 2.1 Knowledge Representations
+    url: https://ict.az/en/content/440
+    category: probabilistic-attribution
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: academic
+    lifecycle: research
+    owner: Huseynli and Hamzazade
+    evidence_level: peer-reviewed
+    verification: provisional
+    last_reviewed: "2026-09-28"
+    use: Treat attribution as a reproducible Bayesian inference problem over structured STIX 2.1 evidence.
+    notes: Conference/publication listing is verifiable, but a stable primary full-paper landing page was not located during this review.
+    tags: [bayes, attribution, stix, uncertainty, reproducibility]
