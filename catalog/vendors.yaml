@@ -1,0 +1,102 @@
+version: 1
+resources:
+  - name: Google Agentic Threat Intelligence
+    url: https://cloud.google.com/security/ai
+    category: agentic-cti
+    source_class: B
+    intelligence_levels: [operational, tactical]
+    access: commercial
+    lifecycle: active
+    owner: Google Cloud Security
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Use Gemini with Google Threat Intelligence, Mandiant and VirusTotal context for assisted threat investigation and hunting.
+    tags: [gemini, mandiant, virustotal, agentic-ai]
+
+  - name: Group-IB Prevyn AI
+    url: https://www.group-ib.com/prevyn-ai/
+    category: agentic-cti
+    source_class: B
+    intelligence_levels: [operational, tactical]
+    access: commercial
+    lifecycle: active
+    owner: Group-IB
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Multi-agent threat research and assistive XDR analysis grounded in Group-IB intelligence.
+    notes: Agent counts and performance improvements are vendor-reported and may vary by page/version.
+    tags: [agentic-ai, threat-actors, dark-web, malware]
+
+  - name: Vellox Reverser
+    url: https://www.boozallen.com/expertise/products/vellox.html
+    category: malware-analysis
+    source_class: B
+    intelligence_levels: [tactical, technical]
+    access: commercial
+    lifecycle: active
+    owner: Booz Allen Hamilton
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: AI-assisted malware reverse engineering and threat-intelligence reporting.
+    tags: [malware, reverse-engineering, agentic-ai]
+
+  - name: Anomali ThreatStream Next-Gen
+    url: https://www.anomali.com/press/anomali-launches-threatstream-next-gen-to-turn-intelligence-into-action-at-the-speed-threats-demand
+    category: threat-intelligence-platform
+    source_class: B
+    intelligence_levels: [strategic, operational, tactical]
+    access: commercial
+    lifecycle: active
+    owner: Anomali
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Integrate intelligence requirements, search, case management and prioritized CTI workflows.
+    notes: Speed claims are vendor-reported and should not be treated as independent benchmarks.
+    tags: [tip, pir, case-management, agentic-ai]
+
+  - name: Protos AI
+    url: https://www.protoslabs.io/
+    category: agentic-cti
+    source_class: B
+    intelligence_levels: [strategic, operational]
+    access: commercial
+    lifecycle: active
+    owner: Protos Labs
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Agentic adversary-risk intelligence across cyber, financial crime, disinformation and supply chain sources.
+    notes: Performance and trust scores shown on vendor pages are self-reported.
+    tags: [agentic-ai, cross-domain, risk]
+
+  - name: Brandefense Ransomware Intelligence
+    url: https://brandefense.io/ransomware-intelligence/
+    category: ransomware-intelligence
+    source_class: B
+    intelligence_levels: [operational, tactical]
+    access: commercial
+    lifecycle: active
+    owner: Brandefense
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Monitor leak sites, IAB markets, group activity and ransomware ecosystem signals.
+    tags: [ransomware, iab, dark-web]
+
+  - name: SOCRadar Free Ransomware Intelligence
+    url: https://socradar.io/free-tools/ransomware-intelligence
+    category: ransomware-intelligence
+    source_class: B
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: SOCRadar
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Explore live ransomware groups, victims, countries, industries, TTPs and IOCs.
+    tags: [ransomware, dashboard, victims]
