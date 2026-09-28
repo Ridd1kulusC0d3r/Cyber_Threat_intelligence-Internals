@@ -124,9 +124,7 @@ def validate(resources: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], lis
 
     duplicate_names = [name for name, count in seen_names.items() if count > 1]
     for name in duplicate_names:
-        # Duplicates can be intentional across shards; make them visible in build output
-        # without failing the catalog.
-        pass
+        errors.append(f"duplicate resource name: {name}")
 
     return normalized, errors
 
