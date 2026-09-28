@@ -24,7 +24,7 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --accept 200,204,206,403,429
+            --accept 200,202,204,206,403,429
             './**/*.md'
             './catalog/*.yaml'
           fail: true
