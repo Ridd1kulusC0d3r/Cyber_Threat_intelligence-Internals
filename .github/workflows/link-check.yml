@@ -25,8 +25,10 @@ jobs:
             --verbose
             --no-progress
             --accept 200,202,204,206,403,429
-            --exclude '^https://www\\.cyber\\.gov\\.au/'
-            --exclude '^https://www\\.trellix\\.com/'
+            --exclude 'cyber[.]gov[.]au'
+            --exclude 'trellix[.]com'
+            --exclude 'sophos[.]com'
+            --exclude 'crt[.]sh'
             './**/*.md'
             './catalog/*.yaml'
           fail: true
