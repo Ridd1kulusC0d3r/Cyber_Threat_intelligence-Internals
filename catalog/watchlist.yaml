@@ -134,3 +134,48 @@ resources:
     use: Candidate framework for structured infrastructure pivots.
     notes: Verify official project source before promotion.
     tags: [pivoting, infrastructure, hunting]
+
+  - name: CTI-Thinker
+    url: ""
+    category: cti-knowledge-graph
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate GraphRAG-oriented CTI extraction and reasoning research.
+    notes: Mentioned in supplied research material; promote only after confirming a primary publication and implementation source.
+    tags: [graphrag, cti, llm]
+
+  - name: mquire
+    url: ""
+    category: memory-forensics
+    source_class: C
+    intelligence_levels: [technical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate Linux memory-analysis project using BTF and kernel symbol information.
+    notes: Primary project source was not sufficiently confirmed during this review.
+    tags: [linux, memory, forensics, btf]
+
+  - name: BTTneo / IARA
+    url: ""
+    category: agentic-cti
+    source_class: B
+    intelligence_levels: [strategic, operational]
+    access: commercial
+    lifecycle: watchlist
+    owner: Apura
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate Brazilian CTI platform with AI-assisted investigative workflows.
+    notes: Public secondary material was located, but an authoritative product source adequate for catalog promotion was not confirmed in this review.
+    tags: [brazil, cti, agentic-ai]

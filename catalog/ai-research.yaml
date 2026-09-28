@@ -130,3 +130,18 @@ resources:
     use: Examine how AI-driven adversary emulation can imitate known actor tradecraft and weaken TTP-only attribution assumptions.
     notes: Research stress test, not evidence that all TTP-based attribution is invalid.
     tags: [ai, attribution, ttp, preprint]
+
+  - name: AttacKG
+    url: https://github.com/li-zhenyuan/AttacKG
+    category: cti-knowledge-graph
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: open-source
+    lifecycle: reference
+    owner: li-zhenyuan and research collaborators
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Extract attack behavior graphs and ATT&CK-related structure from CTI reports for research and reconstruction workflows.
+    notes: Useful research reference; upstream project activity is historical rather than a current production default.
+    tags: [attack-graph, knowledge-graph, cti, nlp]

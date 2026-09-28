@@ -1,0 +1,35 @@
+name: Catalog Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate catalog
+        run: python scripts/build_catalog.py --check
+
+      - name: Build JSON and CSV
+        run: python scripts/build_catalog.py
+
+      - name: Upload generated catalog
+        uses: actions/upload-artifact@v4
+        with:
+          name: cti-catalog
+          path: site/data/

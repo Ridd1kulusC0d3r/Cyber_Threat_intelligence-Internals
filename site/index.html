@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A classified and evidence-aware Cyber Threat Intelligence source directory.">
+  <title>CTI Source Directory</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="shell">
+      <p class="eyebrow">Cyber Threat Intelligence Internals</p>
+      <h1>CTI Source Directory</h1>
+      <p class="lead">Search frameworks, standards, research, tooling, datasets and intelligence sources by analyst problem, evidence maturity and lifecycle.</p>
+      <div class="hero-links">
+        <a href="https://github.com/Ridd1kulusC0d3r/Cyber_Threat_intelligence-Internals">Repository</a>
+        <a href="data/resources.json">JSON</a>
+        <a href="data/resources.csv">CSV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="stats" class="stats" aria-label="Catalog statistics"></section>
+
+    <section class="controls" aria-label="Catalog filters">
+      <label class="search-wrap">
+        <span>Search</span>
+        <input id="search" type="search" placeholder="ATT&CK, ransomware, AI, attribution, Sigma..." autocomplete="off">
+      </label>
+
+      <div class="filters">
+        <label>
+          <span>Category</span>
+          <select id="category"><option value="">All</option></select>
+        </label>
+        <label>
+          <span>Source class</span>
+          <select id="sourceClass">
+            <option value="">All</option>
+            <option value="A">A — authoritative</option>
+            <option value="B">B — original vendor</option>
+            <option value="C">C — community</option>
+          </select>
+        </label>
+        <label>
+          <span>Evidence</span>
+          <select id="evidence"><option value="">All</option></select>
+        </label>
+        <label>
+          <span>Lifecycle</span>
+          <select id="lifecycle"><option value="">All</option></select>
+        </label>
+        <label>
+          <span>Verification</span>
+          <select id="verification"><option value="">All</option></select>
+        </label>
+      </div>
+
+      <div class="control-row">
+        <p id="resultCount" class="result-count"></p>
+        <button id="reset" type="button">Reset filters</button>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <p>Built from a machine-readable catalog. Evidence level and lifecycle are part of the data model, because a reachable URL is not the same thing as a trustworthy source.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
