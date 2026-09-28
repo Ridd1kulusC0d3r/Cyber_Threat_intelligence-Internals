@@ -1,44 +1,83 @@
-# Machine-readable catalog
+# Machine-readable CTI catalog
 
-The `catalog/core.yaml` file is the structured seed for the repository.
+The files in this directory are the repository's structured source of truth.
 
-Its purpose is to make the collection reusable by:
+## Shards
 
-- GitHub Pages;
-- static-site generators;
-- search/filter interfaces;
-- CTI dashboards;
-- automated freshness checks;
-- exports to JSON/CSV;
-- future scoring and tagging pipelines.
+| File | Scope |
+|---|---|
+| `core.yaml` | Foundational CTI resources |
+| `frameworks.yaml` | Frameworks, models, risk and standards |
+| `detection.yaml` | Detection engineering, hunting and validation |
+| `attribution.yaml` | Attribution, confidence and analytic methods |
+| `ai-research.yaml` | CTI/AI research |
+| `vendors.yaml` | Vendor platforms and product capabilities |
+| `datasets.yaml` | CTI and provenance datasets |
+| `specialized.yaml` | Specialized intelligence domains |
+| `watchlist.yaml` | Interesting leads not yet sufficiently verified |
 
-## Fields
+## Schema
 
 ```yaml
-name:
-url:
-category:
-source_class:
-intelligence_levels:
-access:
-lifecycle:
-owner:
-last_reviewed:
-use:
-tags:
+- name:
+  url:
+  category:
+  source_class:
+  intelligence_levels:
+    - strategic
+    - operational
+    - tactical
+    - technical
+  access:
+  lifecycle:
+  owner:
+  evidence_level:
+  verification:
+  last_reviewed:
+  use:
+  notes:
+  tags: []
 ```
 
-### Lifecycle values
+The build script can infer evidence/verification defaults for older `core.yaml` entries, but new contributions should set them explicitly.
 
-- `active`
-- `reference`
-- `legacy`
-- `archived`
+## Evidence
 
-### Source classes
+- `official`
+- `peer-reviewed`
+- `preprint`
+- `vendor-claim`
+- `community`
+- `unverified`
 
-- `A` — authoritative / standards / government / CERT / primary datasets
-- `B` — original vendor or research-team intelligence
-- `C` — community, aggregator or analyst-maintained collection
+## Verification
 
-The Markdown guides remain the human-readable layer. The YAML catalog is the automation layer.
+- `verified`
+- `provisional`
+- `watchlist`
+- `rejected`
+
+## Build
+
+```bash
+pip install -r requirements.txt
+python scripts/build_catalog.py --check
+python scripts/build_catalog.py
+```
+
+Generated artifacts:
+
+```text
+site/data/
+├── resources.json
+├── resources.csv
+└── stats.json
+```
+
+Do not edit generated files by hand.
+
+## Design principle
+
+Markdown explains **why** a resource matters. YAML records **what** the resource is. The web UI provides **how to find it**.
+
+Keeping those jobs separate is considerably less glamorous than a 900-link README and considerably more useful.
