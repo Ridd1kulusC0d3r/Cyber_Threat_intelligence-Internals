@@ -184,7 +184,7 @@ resources:
     access: academic
     lifecycle: watchlist
     owner: CNAM / C&ESAR 2026 authors
-    evidence_level: preprint
+    evidence_level: unverified
     verification: provisional
     last_reviewed: "2026-09-28"
     use: Model the dependency chain from ATT&CK techniques through telemetry, analytics and sensors to measurable detection improvement.
