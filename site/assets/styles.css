@@ -59,3 +59,17 @@ footer { border-top: 1px solid var(--line); color: var(--muted); padding: 28px 0
   .filters { grid-template-columns: 1fr; }
   .card-head, .control-row { display: grid; }
 }
+
+.analyst-views { margin: 12px 0 24px; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(180deg, var(--panel), rgba(16,26,42,.55)); padding: 18px; }
+.section-heading { display: flex; justify-content: space-between; gap: 24px; align-items: end; margin-bottom: 14px; }
+.section-heading h2 { margin: 2px 0 0; font-size: 1.2rem; }
+.section-heading p { margin: 0; color: var(--muted); max-width: 560px; font-size: .9rem; }
+.presets { display: flex; flex-wrap: wrap; gap: 8px; }
+.preset { font-size: .82rem; }
+.preset.active { border-color: var(--accent); background: var(--accent-soft); color: #fff; }
+.guide-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+.guide-links a { color: var(--muted); font-size: .82rem; text-decoration: none; }
+.guide-links a:hover { color: var(--accent); }
+@media (max-width: 700px) {
+  .section-heading { display: grid; align-items: start; }
+}

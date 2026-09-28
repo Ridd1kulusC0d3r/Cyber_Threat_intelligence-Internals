@@ -124,9 +124,7 @@ def validate(resources: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], lis
 
     duplicate_names = [name for name, count in seen_names.items() if count > 1]
     for name in duplicate_names:
-        # Duplicates can be intentional across shards; make them visible in build output
-        # without failing the catalog.
-        pass
+        errors.append(f"duplicate resource name: {name}")
 
     return normalized, errors
 
@@ -139,6 +137,17 @@ def stats(resources: list[dict[str, Any]]) -> dict[str, Any]:
         "research": sum(1 for r in resources if r.get("lifecycle") == "research"),
         "watchlist": sum(1 for r in resources if r.get("verification") == "watchlist"),
         "verified": sum(1 for r in resources if r.get("verification") == "verified"),
+        "provisional": sum(1 for r in resources if r.get("verification") == "provisional"),
+        "peer_reviewed": sum(1 for r in resources if r.get("evidence_level") == "peer-reviewed"),
+        "ot_ics": sum(
+            1 for r in resources
+            if {"ot", "ics"} & set(r.get("tags", []))
+        ),
+        "probabilistic": sum(
+            1 for r in resources
+            if "bayes" in set(r.get("tags", []))
+            or "probabilistic" in str(r.get("category", ""))
+        ),
         "by_source_class": dict(Counter(r.get("source_class") for r in resources)),
         "by_evidence": dict(Counter(r.get("evidence_level") for r in resources)),
     }
