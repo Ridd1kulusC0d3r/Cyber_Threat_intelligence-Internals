@@ -1,0 +1,423 @@
+version: 1
+last_updated: "2026-09-27"
+
+resources:
+  - name: MITRE ATT&CK
+    url: https://attack.mitre.org/
+    category: threat-modeling
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE
+    last_reviewed: "2026-09-27"
+    use: Normalize observed adversary behavior into tactics and techniques.
+    tags: [attack, ttp, behavior, enterprise, mobile, ics]
+
+  - name: MITRE D3FEND
+    url: https://d3fend.mitre.org/
+    category: defensive-modeling
+    source_class: A
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE
+    last_reviewed: "2026-09-27"
+    use: Model technical cybersecurity countermeasures and relationships.
+    tags: [defense, countermeasures, knowledge-graph]
+
+  - name: MITRE ATLAS
+    url: https://atlas.mitre.org/
+    category: ai-security
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE
+    last_reviewed: "2026-09-27"
+    use: Model adversarial behavior involving AI-enabled systems.
+    tags: [ai, ml, genai, agentic-ai]
+
+  - name: MITRE EMB3D
+    url: https://emb3d.mitre.org/
+    category: embedded-security
+    source_class: A
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE
+    last_reviewed: "2026-09-27"
+    use: Map embedded-device properties to threats and mitigations.
+    tags: [iot, embedded, ot, critical-infrastructure]
+
+  - name: Attack Flow
+    url: https://ctid.mitre.org/projects/attack-flow/
+    category: attack-modeling
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE CTID
+    last_reviewed: "2026-09-27"
+    use: Represent sequences and relationships among adversary actions.
+    tags: [attack-flow, graph, attack, atlas, d3fend]
+
+  - name: Summiting the Pyramid
+    url: https://ctid.mitre.org/projects/summiting-the-pyramid
+    category: detection-engineering
+    source_class: A
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE CTID
+    last_reviewed: "2026-09-27"
+    use: Evaluate implementation coverage and detection quality beyond heatmaps.
+    tags: [detection, coverage, analytics, telemetry]
+
+  - name: INFORM Your Defense
+    url: https://ctid.mitre.org/projects/inform-your-defense/
+    category: program-maturity
+    source_class: A
+    intelligence_levels: [strategic, operational]
+    access: free
+    lifecycle: active
+    owner: MITRE CTID
+    last_reviewed: "2026-09-27"
+    use: Assess maturity of threat-informed defense programs.
+    tags: [maturity, threat-informed-defense, assessment]
+
+  - name: STIX 2.1
+    url: https://www.oasis-open.org/standard/stix-version-2-1/
+    category: standard
+    source_class: A
+    intelligence_levels: [technical, operational]
+    access: free
+    lifecycle: active
+    owner: OASIS
+    last_reviewed: "2026-09-27"
+    use: Represent cyber threat intelligence as structured objects and relationships.
+    tags: [stix, oasis, sharing, data-model]
+
+  - name: TAXII 2.1
+    url: https://www.oasis-open.org/standard/taxii-version-2-1/
+    category: standard
+    source_class: A
+    intelligence_levels: [technical]
+    access: free
+    lifecycle: active
+    owner: OASIS
+    last_reviewed: "2026-09-27"
+    use: Exchange CTI through a standardized API model.
+    tags: [taxii, oasis, sharing, api]
+
+  - name: FIRST TLP 2.0
+    url: https://www.first.org/tlp/
+    category: information-sharing
+    source_class: A
+    intelligence_levels: [strategic, operational, tactical, technical]
+    access: free
+    lifecycle: active
+    owner: FIRST
+    last_reviewed: "2026-09-27"
+    use: Define dissemination boundaries for shared information.
+    tags: [tlp, first, sharing]
+
+  - name: MISP
+    url: https://www.misp-project.org/
+    category: threat-intelligence-platform
+    source_class: C
+    intelligence_levels: [operational, tactical, technical]
+    access: open-source
+    lifecycle: active
+    owner: MISP Project
+    last_reviewed: "2026-09-27"
+    use: Share and manage indicators, events, taxonomies and threat context.
+    tags: [misp, tip, ioc, sharing]
+
+  - name: OpenCTI
+    url: https://www.opencti.io/
+    category: threat-intelligence-platform
+    source_class: C
+    intelligence_levels: [strategic, operational, tactical, technical]
+    access: open-source-commercial
+    lifecycle: active
+    owner: Filigran
+    last_reviewed: "2026-09-27"
+    use: Manage STIX-native CTI as a connected knowledge graph.
+    tags: [opencti, stix, knowledge-graph, tip]
+
+  - name: CISA Known Exploited Vulnerabilities
+    url: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+    category: vulnerability-intelligence
+    source_class: A
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: CISA
+    last_reviewed: "2026-09-27"
+    use: Prioritize vulnerabilities with evidence of exploitation.
+    tags: [cisa, kev, vulnerability, exploitation]
+
+  - name: FIRST EPSS
+    url: https://www.first.org/epss/
+    category: vulnerability-intelligence
+    source_class: A
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: FIRST
+    last_reviewed: "2026-09-27"
+    use: Estimate probability of vulnerability exploitation.
+    tags: [epss, vulnerability, prioritization]
+
+  - name: NVD
+    url: https://nvd.nist.gov/
+    category: vulnerability-intelligence
+    source_class: A
+    intelligence_levels: [technical]
+    access: free
+    lifecycle: active
+    owner: NIST
+    last_reviewed: "2026-09-27"
+    use: Enrich CVEs with standardized vulnerability metadata.
+    tags: [nvd, cve, cvss, cpe]
+
+  - name: VirusTotal
+    url: https://www.virustotal.com/
+    category: enrichment
+    source_class: B
+    intelligence_levels: [technical, tactical]
+    access: freemium-commercial
+    lifecycle: active
+    owner: Google
+    last_reviewed: "2026-09-27"
+    use: Enrich files, hashes, URLs, domains and infrastructure.
+    tags: [malware, ioc, enrichment]
+
+  - name: urlscan.io
+    url: https://urlscan.io/
+    category: enrichment
+    source_class: C
+    intelligence_levels: [technical, tactical]
+    access: freemium
+    lifecycle: active
+    owner: urlscan
+    last_reviewed: "2026-09-27"
+    use: Analyze web infrastructure and page behavior.
+    tags: [phishing, web, infrastructure]
+
+  - name: GreyNoise
+    url: https://viz.greynoise.io/
+    category: internet-intelligence
+    source_class: B
+    intelligence_levels: [technical, tactical]
+    access: freemium-commercial
+    lifecycle: active
+    owner: GreyNoise
+    last_reviewed: "2026-09-27"
+    use: Distinguish broad Internet scanning from higher-value activity.
+    tags: [internet, scanning, ip, enrichment]
+
+  - name: ThreatFox
+    url: https://threatfox.abuse.ch/
+    category: ioc-feed
+    source_class: C
+    intelligence_levels: [technical]
+    access: free
+    lifecycle: active
+    owner: abuse.ch
+    last_reviewed: "2026-09-27"
+    use: Track malware-associated indicators.
+    tags: [ioc, malware, abuse-ch]
+
+  - name: URLhaus
+    url: https://urlhaus.abuse.ch/
+    category: ioc-feed
+    source_class: C
+    intelligence_levels: [technical]
+    access: free
+    lifecycle: active
+    owner: abuse.ch
+    last_reviewed: "2026-09-27"
+    use: Track URLs used for malware distribution.
+    tags: [url, malware, abuse-ch]
+
+  - name: MalwareBazaar
+    url: https://bazaar.abuse.ch/
+    category: malware-intelligence
+    source_class: C
+    intelligence_levels: [technical]
+    access: free
+    lifecycle: active
+    owner: abuse.ch
+    last_reviewed: "2026-09-27"
+    use: Research malware metadata, hashes and families in authorized workflows.
+    tags: [malware, hashes, abuse-ch]
+
+  - name: Feodo Tracker
+    url: https://feodotracker.abuse.ch/
+    category: infrastructure-intelligence
+    source_class: C
+    intelligence_levels: [technical]
+    access: free
+    lifecycle: active
+    owner: abuse.ch
+    last_reviewed: "2026-09-27"
+    use: Track botnet command-and-control infrastructure.
+    tags: [botnet, c2, abuse-ch]
+
+  - name: Sigma
+    url: https://sigmahq.io/
+    category: detection-engineering
+    source_class: C
+    intelligence_levels: [tactical]
+    access: open-source
+    lifecycle: active
+    owner: SigmaHQ
+    last_reviewed: "2026-09-27"
+    use: Express portable detection logic across security platforms.
+    tags: [sigma, detection, siem]
+
+  - name: YARA
+    url: https://virustotal.github.io/yara/
+    category: malware-detection
+    source_class: B
+    intelligence_levels: [technical]
+    access: open-source
+    lifecycle: active
+    owner: VirusTotal
+    last_reviewed: "2026-09-27"
+    use: Identify and classify files using pattern-based rules.
+    tags: [yara, malware, detection]
+
+  - name: Awesome Threat Detection
+    url: https://github.com/0x4D31/awesome-threat-detection
+    category: community-collection
+    source_class: C
+    intelligence_levels: [tactical, technical]
+    access: free
+    lifecycle: active
+    owner: 0x4D31
+    last_reviewed: "2026-09-27"
+    use: Discover detection, hunting, dataset and research resources.
+    tags: [awesome-list, detection, hunting]
+
+  - name: Awesome Detection Engineering
+    url: https://github.com/infosecB/awesome-detection-engineering
+    category: community-collection
+    source_class: C
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: infosecB
+    last_reviewed: "2026-09-27"
+    use: Discover detection-engineering tools and practices.
+    tags: [awesome-list, detection-engineering]
+
+  - name: HELK
+    url: https://github.com/Cyb3rWard0g/HELK
+    category: hunting-lab
+    source_class: C
+    intelligence_levels: [tactical, technical]
+    access: open-source
+    lifecycle: legacy
+    owner: Cyb3rWard0g
+    last_reviewed: "2026-09-27"
+    use: Historical threat-hunting architecture and learning reference.
+    tags: [helk, elk, hunting, legacy]
+
+  - name: DetectionLab
+    url: https://github.com/clong/DetectionLab
+    category: detection-lab
+    source_class: C
+    intelligence_levels: [tactical, technical]
+    access: open-source
+    lifecycle: legacy
+    owner: clong
+    last_reviewed: "2026-09-27"
+    use: Historical reproducible detection-lab reference.
+    tags: [lab, detection, legacy]
+
+  - name: Ransomware.live
+    url: https://www.ransomware.live/
+    category: ransomware-intelligence
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: community
+    last_reviewed: "2026-09-27"
+    use: Aggregate public ransomware group and victim observations.
+    tags: [ransomware, victims, groups]
+
+  - name: RansomLook
+    url: https://www.ransomlook.io/
+    category: ransomware-intelligence
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: community
+    last_reviewed: "2026-09-27"
+    use: Search and analyze open ransomware intelligence and statistics.
+    tags: [ransomware, groups, leaks, api]
+
+  - name: RansomWatch
+    url: https://github.com/joshhighet/ransomwatch
+    category: ransomware-intelligence
+    source_class: C
+    intelligence_levels: [operational]
+    access: open-source
+    lifecycle: archived
+    owner: joshhighet
+    last_reviewed: "2026-09-27"
+    use: Historical ransomware monitoring dataset and project reference.
+    tags: [ransomware, archived, historical]
+
+  - name: Ransomware Tool Matrix
+    url: https://github.com/BushidoUK/Ransomware-Tool-Matrix
+    category: ransomware-intelligence
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: BushidoUK
+    last_reviewed: "2026-09-27"
+    use: Track tools reported across ransomware operations.
+    tags: [ransomware, tooling, matrix]
+
+  - name: The DFIR Report
+    url: https://thedfirreport.com/reports/
+    category: incident-research
+    source_class: B
+    intelligence_levels: [operational, tactical, technical]
+    access: free-commercial
+    lifecycle: active
+    owner: The DFIR Report
+    last_reviewed: "2026-09-27"
+    use: Study evidence-rich intrusion timelines and adversary behavior.
+    tags: [dfir, intrusion, ransomware, attack-chain]
+
+  - name: Awesome Threat Intelligence
+    url: https://github.com/hslatman/awesome-threat-intelligence
+    category: community-collection
+    source_class: C
+    intelligence_levels: [strategic, operational, tactical, technical]
+    access: free
+    lifecycle: active
+    owner: hslatman
+    last_reviewed: "2026-09-27"
+    use: Discover CTI sources, frameworks, formats and tools.
+    tags: [awesome-list, cti]
+
+  - name: Awesome Hacker Search Engines
+    url: https://github.com/edoardottt/awesome-hacker-search-engines
+    category: community-collection
+    source_class: C
+    intelligence_levels: [technical, tactical]
+    access: free
+    lifecycle: active
+    owner: edoardottt
+    last_reviewed: "2026-09-27"
+    use: Discover search engines relevant to authorized defensive Internet research.
+    tags: [osint, search, infrastructure]
