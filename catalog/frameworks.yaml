@@ -1,0 +1,226 @@
+version: 1
+resources:
+  - name: Cyber Kill Chain
+    url: https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html
+    category: adversary-modeling
+    source_class: B
+    intelligence_levels: [strategic, operational]
+    access: free
+    lifecycle: reference
+    owner: Lockheed Martin
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Communicate intrusion progression as a high-level sequential lifecycle.
+    tags: [kill-chain, lifecycle, adversary]
+
+  - name: STRIDE
+    url: https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats
+    category: threat-modeling
+    source_class: B
+    intelligence_levels: [strategic, tactical]
+    access: free
+    lifecycle: active
+    owner: Microsoft
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Categorize design-time threats such as spoofing, tampering and information disclosure.
+    tags: [stride, design, architecture]
+
+  - name: SPARTA
+    url: https://sparta.aerospace.org/
+    category: space-security
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: The Aerospace Corporation
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Analyze cyber and counterspace TTPs affecting spacecraft and ground segments.
+    tags: [space, spacecraft, ttp]
+
+  - name: SITF
+    url: https://www.wiz.io/blog/sitf-sdlc-threat-framework
+    category: sdlc-security
+    source_class: B
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: Wiz
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Model threats to repositories, CI/CD systems, registries and software-production infrastructure.
+    tags: [sdlc, cicd, supply-chain]
+
+  - name: PR3TACK
+    url: https://pr3tack.org/
+    category: anticipatory-threat-modeling
+    source_class: C
+    intelligence_levels: [strategic, tactical]
+    access: free
+    lifecycle: emerging
+    owner: PR3TACK Project
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Catalog plausible but not-yet-observed adversary techniques for anticipatory analysis.
+    notes: Do not treat PR3TACK techniques as evidence of observed activity.
+    tags: [preemptive, future-ttps, forecasting]
+
+  - name: NIST Cybersecurity Framework 2.0
+    url: https://www.nist.gov/cyberframework
+    category: governance
+    source_class: A
+    intelligence_levels: [strategic]
+    access: free
+    lifecycle: active
+    owner: NIST
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Organize cybersecurity risk outcomes across Govern, Identify, Protect, Detect, Respond and Recover.
+    tags: [nist, csf, governance, risk]
+
+  - name: CIS Controls v8.1
+    url: https://www.cisecurity.org/controls/v8
+    category: defensive-controls
+    source_class: A
+    intelligence_levels: [strategic, tactical]
+    access: free
+    lifecycle: active
+    owner: Center for Internet Security
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Prioritize concrete defensive safeguards and implementation groups.
+    tags: [cis, controls, safeguards]
+
+  - name: NIST AI Risk Management Framework
+    url: https://www.nist.gov/itl/ai-risk-management-framework
+    category: ai-risk
+    source_class: A
+    intelligence_levels: [strategic]
+    access: free
+    lifecycle: active
+    owner: NIST
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Manage trustworthiness and risk across AI system lifecycles.
+    tags: [ai, risk, governance]
+
+  - name: OWASP Top 10 for LLM and GenAI Applications
+    url: https://genai.owasp.org/llm-top-10/
+    category: ai-security
+    source_class: C
+    intelligence_levels: [tactical]
+    access: free
+    lifecycle: active
+    owner: OWASP GenAI Security Project
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Identify common application-level risks in LLM and generative-AI systems.
+    tags: [owasp, llm, genai, appsec]
+
+  - name: LINDDUN
+    url: https://linddun.org/
+    category: privacy-threat-modeling
+    source_class: A
+    intelligence_levels: [strategic, tactical]
+    access: free
+    lifecycle: active
+    owner: KU Leuven DistriNet
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Systematically elicit and mitigate privacy threats in software designs.
+    tags: [privacy, threat-modeling, design]
+
+  - name: MITRE ESTM
+    url: https://estm.mitre.org/
+    category: embedded-security
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: MITRE
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Analyze tactics and techniques specific to embedded systems.
+    tags: [embedded, estm, critical-infrastructure]
+
+  - name: FAIR
+    url: https://www.fairinstitute.org/what-is-fair
+    category: risk-analysis
+    source_class: C
+    intelligence_levels: [strategic]
+    access: free-commercial
+    lifecycle: active
+    owner: FAIR Institute
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Quantify information risk using probabilistic and financial terms.
+    tags: [fair, risk, quantitative]
+
+  - name: NIST SP 800-30
+    url: https://csrc.nist.gov/pubs/sp/800/30/r1/final
+    category: risk-analysis
+    source_class: A
+    intelligence_levels: [strategic]
+    access: free
+    lifecycle: reference
+    owner: NIST
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Conduct structured information-security risk assessments.
+    tags: [nist, risk-assessment]
+
+  - name: CORAS
+    url: https://coras.sourceforge.net/
+    category: risk-analysis
+    source_class: C
+    intelligence_levels: [strategic, tactical]
+    access: free
+    lifecycle: reference
+    owner: CORAS Project
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Perform model-based security risk analysis with graphical threat/risk models.
+    tags: [risk, model-based, coras]
+
+  - name: MAGERIT
+    url: https://administracionelectronica.gob.es/pae_Home/pae_Documentacion/pae_Metodolog/pae_Magerit.html
+    category: risk-analysis
+    source_class: A
+    intelligence_levels: [strategic]
+    access: free
+    lifecycle: reference
+    owner: Government of Spain
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Structured information-system risk analysis and management methodology.
+    tags: [risk, magerit, governance]
+
+  - name: CTI-CMM
+    url: https://cti-cmm.org/
+    category: cti-maturity
+    source_class: C
+    intelligence_levels: [strategic]
+    access: free
+    lifecycle: active
+    owner: CTI-CMM Community
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Assess and improve CTI capability through stakeholder-focused maturity practices.
+    tags: [cti, maturity, program]
