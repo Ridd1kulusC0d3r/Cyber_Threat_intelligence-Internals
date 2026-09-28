@@ -1,4 +1,4 @@
-const state = { resources: [], stats: {} };
+const state = { resources: [], stats: {}, preset: "" };
 
 const $ = (id) => document.getElementById(id);
 const norm = (value) => String(value ?? "").toLowerCase();
@@ -23,13 +23,38 @@ function renderStats() {
     ["Resources", stats.resources ?? state.resources.length],
     ["Categories", stats.categories ?? unique("category").length],
     ["Verified", stats.verified ?? 0],
-    ["Active", stats.active ?? 0],
-    ["Research", stats.research ?? 0],
+    ["Peer-reviewed", stats.peer_reviewed ?? 0],
+    ["OT / ICS", stats.ot_ics ?? 0],
     ["Watchlist", stats.watchlist ?? 0],
   ];
   $("stats").innerHTML = items.map(([label, value]) =>
     `<div class="stat"><strong>${value}</strong><span>${label}</span></div>`
   ).join("");
+}
+
+function presetMatches(resource) {
+  if (!state.preset) return true;
+  const tags = new Set((resource.tags || []).map(norm));
+  const category = norm(resource.category);
+  const text = [
+    resource.name, resource.use, resource.owner, resource.category,
+    ...(resource.tags || [])
+  ].map(norm).join(" ");
+
+  const rules = {
+    ot: () => tags.has("ot") || tags.has("ics") || category.startsWith("ot-") || category.includes("energy-"),
+    graph: () => [...tags].some((t) => t.includes("graph") || t === "provenance" || t === "gnn")
+      || category.includes("graph") || category.includes("provenance") || category.includes("campaign-reconstruction"),
+    bayes: () => tags.has("bayes") || category.includes("probabilistic"),
+    detection: () => category.includes("detection") || category.includes("hunting")
+      || category.includes("validation") || category.includes("purple-team")
+      || tags.has("detection") || tags.has("hunting"),
+    ransomware: () => text.includes("ransomware"),
+    ai: () => ["ai", "llm", "agentic-ai", "graphrag", "adversarial-ai"].some((tag) => tags.has(tag))
+      || category.includes("ai"),
+    watchlist: () => resource.verification === "watchlist" || resource.verification === "provisional",
+  };
+  return rules[state.preset] ? rules[state.preset]() : true;
 }
 
 function matches(resource) {
@@ -40,7 +65,8 @@ function matches(resource) {
     ...(resource.tags || []), ...(resource.intelligence_levels || [])
   ].map(norm).join(" ");
 
-  return (!q || haystack.includes(q))
+  return presetMatches(resource)
+    && (!q || haystack.includes(q))
     && (!$("category").value || resource.category === $("category").value)
     && (!$("sourceClass").value || resource.source_class === $("sourceClass").value)
     && (!$("evidence").value || resource.evidence_level === $("evidence").value)
@@ -94,9 +120,21 @@ function render() {
     : '<div class="empty">No resources match these filters.</div>';
 }
 
+function setPreset(preset) {
+  state.preset = preset;
+  document.querySelectorAll(".preset").forEach((button) => {
+    button.classList.toggle("active", button.dataset.preset === preset);
+  });
+  render();
+}
+
 function reset() {
+  state.preset = "";
   $("search").value = "";
   ["category", "sourceClass", "evidence", "lifecycle", "verification"].forEach((id) => $(id).value = "");
+  document.querySelectorAll(".preset").forEach((button) => {
+    button.classList.toggle("active", button.dataset.preset === "");
+  });
   render();
 }
 
@@ -116,9 +154,20 @@ async function init() {
   renderStats();
   render();
 
-  $("search").addEventListener("input", render);
+  $("search").addEventListener("input", () => {
+    state.preset = "";
+    document.querySelectorAll(".preset").forEach((button) => button.classList.remove("active"));
+    render();
+  });
   ["category", "sourceClass", "evidence", "lifecycle", "verification"].forEach((id) =>
-    $(id).addEventListener("change", render)
+    $(id).addEventListener("change", () => {
+      state.preset = "";
+      document.querySelectorAll(".preset").forEach((button) => button.classList.remove("active"));
+      render();
+    })
+  );
+  document.querySelectorAll(".preset").forEach((button) =>
+    button.addEventListener("click", () => setPreset(button.dataset.preset || ""))
   );
   $("reset").addEventListener("click", reset);
 }
