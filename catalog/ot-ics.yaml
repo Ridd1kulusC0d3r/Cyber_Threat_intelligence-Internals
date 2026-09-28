@@ -1,0 +1,145 @@
+version: 1
+resources:
+  - name: Dragos 2026 OT Cybersecurity Year in Review
+    url: https://www.dragos.com/ot-cybersecurity-year-in-review
+    category: ot-threat-landscape
+    source_class: B
+    intelligence_levels: [strategic, operational]
+    access: free
+    lifecycle: active
+    owner: Dragos
+    evidence_level: vendor-claim
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Track current OT/ICS adversary activity, ransomware impact, control-loop reconnaissance and defensive visibility gaps.
+    notes: Treat quantitative findings as Dragos-observed data from its telemetry, incident-response and assessment population, not universal prevalence.
+    tags: [ot, ics, control-loop, threat-landscape, ransomware]
+
+  - name: CyOTE CATCH
+    url: https://cyote.inl.gov/tools/collection-and-analysis-of-telemetry-for-cyote-heuristics-catch/
+    category: ot-threat-hunting
+    source_class: A
+    intelligence_levels: [operational, tactical, technical]
+    access: free
+    lifecycle: active
+    owner: Idaho National Laboratory / CyOTE
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Convert OT telemetry into STIX 2.1, store relationships in Neo4j and detect ATT&CK for ICS behaviors with graph queries.
+    notes: Official CyOTE documentation reports 26 ICS-specific techniques across 11 tactics and integration with BAM.
+    tags: [ot, ics, stix, neo4j, attack-ics, hunting]
+
+  - name: CyOTE Bayesian Attack Model (BAM)
+    url: https://cyote.inl.gov/tools/bayesian-attack-model-bam/
+    category: ot-probabilistic-analysis
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: limited
+    lifecycle: active
+    owner: Idaho National Laboratory / CyOTE
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Model attack progression probabilistically across early, middle, late and impact phases using OT intelligence.
+    tags: [ot, ics, bayes, attack-progression, cyote]
+
+  - name: CyOTE OPTIC
+    url: https://cyote.inl.gov/tools/operational-process-for-trigger-identification-and-comprehension-optic/
+    category: ot-threat-hunting
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: Idaho National Laboratory / CyOTE
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Capture human-observed operational anomalies, map them to historical patterns and export STIX 2.1 for downstream analysis.
+    tags: [ot, ics, operator-observation, stix, hunting]
+
+  - name: CyOTE Attack Chain Estimator (ACE)
+    url: https://cyote.inl.gov/tools/attack-chain-estimator-ace/
+    category: ot-predictive-cti
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: Idaho National Laboratory / CyOTE
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Estimate ATT&CK for ICS behavior described in threat reports and predict likely next TTPs from historical attack-chain knowledge.
+    tags: [ot, ics, attack-chain, prediction, markov, cyote]
+
+  - name: OT-ISAC
+    url: https://www.otisac.org/
+    category: ot-information-sharing
+    source_class: A
+    intelligence_levels: [strategic, operational, tactical]
+    access: membership
+    lifecycle: active
+    owner: Operational Technology Information Sharing and Analysis Center
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Share and contextualize tactical and strategic OT/ICS intelligence among operators, government and partners.
+    tags: [ot, ics, isac, collective-defense, sharing]
+
+  - name: Dragos Neighborhood Keeper
+    url: https://www.dragos.com/cybersecurity-platform/neighborhood-keeper/
+    category: ot-collective-defense
+    source_class: B
+    intelligence_levels: [operational, tactical]
+    access: commercial
+    lifecycle: active
+    owner: Dragos
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Share anonymized OT threat insights at machine speed across participating industrial organizations.
+    notes: Participation requires the Dragos Platform; service characteristics are described by the vendor.
+    tags: [ot, ics, collective-defense, sharing, anonymization]
+
+  - name: ETHOS Emerging THreat Open Sharing
+    url: https://github.com/ethos-org/ethos-initiative-information
+    category: ot-information-sharing
+    source_class: C
+    intelligence_levels: [operational, tactical]
+    access: open-source
+    lifecycle: emerging
+    owner: ETHOS community
+    evidence_level: community
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Explore open-source early-warning sharing for statistically significant OT/ICS behaviors and emerging activity.
+    tags: [ot, ics, open-source, early-warning, sharing]
+
+  - name: EE-ISAC
+    url: https://www.ee-isac.eu/
+    category: energy-information-sharing
+    source_class: A
+    intelligence_levels: [strategic, operational, tactical]
+    access: membership
+    lifecycle: active
+    owner: European Energy ISAC
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Support energy-sector threat sharing, analysis and incident collaboration using member platforms including MISP and Nextcloud.
+    tags: [energy, isac, misp, sharing, europe]
+
+  - name: AIPCTI Framework
+    url: https://www.ijisrt.com/aidriven-predictive-cyber-threat-intelligence-framework-for-securing-industrial-digital-infrastructure
+    category: ot-predictive-cti
+    source_class: C
+    intelligence_levels: [strategic, operational]
+    access: open-access
+    lifecycle: research
+    owner: Academic research
+    evidence_level: peer-reviewed
+    verification: provisional
+    last_reviewed: "2026-09-28"
+    use: Conceptual six-layer architecture for AI-assisted predictive CTI in industrial digital infrastructure.
+    notes: The authors explicitly describe it as a design-stage conceptual framework, not a live operational benchmark.
+    tags: [ot, ics, ai, predictive-cti, zero-trust, research]
