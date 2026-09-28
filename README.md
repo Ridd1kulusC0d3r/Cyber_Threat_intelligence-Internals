@@ -1,12 +1,14 @@
 # Cyber Threat Intelligence Internals
 
-> An evidence-aware, machine-readable directory for Cyber Threat Intelligence, threat-informed defense, detection engineering, attribution, ransomware research and emerging CTI research.
+> An evidence-aware, machine-readable directory for Cyber Threat Intelligence, threat-informed defense, OT/ICS, probabilistic analysis, graph hunting, detection engineering, attribution, ransomware and emerging research.
 
 [![Link Check](https://github.com/Ridd1kulusC0d3r/Cyber_Threat_intelligence-Internals/actions/workflows/link-check.yml/badge.svg)](https://github.com/Ridd1kulusC0d3r/Cyber_Threat_intelligence-Internals/actions/workflows/link-check.yml)
 [![Catalog Validate](https://github.com/Ridd1kulusC0d3r/Cyber_Threat_intelligence-Internals/actions/workflows/catalog-build.yml/badge.svg)](https://github.com/Ridd1kulusC0d3r/Cyber_Threat_intelligence-Internals/actions/workflows/catalog-build.yml)
 ![CTI](https://img.shields.io/badge/Focus-Cyber%20Threat%20Intelligence-111827)
 ![Evidence](https://img.shields.io/badge/Evidence-Tracked-2563eb)
 ![Lifecycle](https://img.shields.io/badge/Lifecycle-Tracked-0f766e)
+
+**[Open the live CTI Source Directory →](https://ridd1kulusc0d3r.github.io/Cyber_Threat_intelligence-Internals/)**
 
 ## From link list to CTI Source Directory
 
@@ -41,7 +43,10 @@ This repository makes those distinctions explicit.
 | Defensive countermeasures | [D3FEND](https://d3fend.mitre.org/) · [CIS Controls](https://www.cisecurity.org/controls/v8) · [NIST CSF](https://www.nist.gov/cyberframework) |
 | Detection quality | [Summiting the Pyramid](https://ctid.mitre.org/projects/summiting-the-pyramid) · [DeTT&CT](https://github.com/rabobank-cdc/DeTTECT) · [Sigma](https://sigmahq.io/) |
 | Endpoint hunting | [YAMAGoya](https://github.com/JPCERTCC/YAMAGoya) · [Velociraptor](https://docs.velociraptor.app/) |
-| Provenance hunting | [ProHunter](https://github.com/xueboQiu/ProHunter) |
+| Provenance / graph hunting | [Graph & Provenance guide](docs/graph-provenance-hunting.md) · [ProHunter](https://github.com/xueboQiu/ProHunter) · [CTI-Thinker](https://doi.org/10.1186/s42400-025-00505-y) |
+| OT / ICS intelligence | [OT/ICS guide](docs/ot-ics-intelligence.md) · [CyOTE CATCH](https://cyote.inl.gov/tools/collection-and-analysis-of-telemetry-for-cyote-heuristics-catch/) · [ACE](https://cyote.inl.gov/tools/attack-chain-estimator-ace/) |
+| Probabilistic CTI | [Probabilistic CTI guide](docs/probabilistic-cti.md) · Bayesian threat quantification · CyOTE BAM |
+| Instrumented purple teaming | [Purple Teaming guide](docs/instrumented-purple-teaming.md) · ATT&CK · D3FEND · Summiting the Pyramid |
 | Attribution | [Diamond Model](docs/attribution-analytics.md) · [Unit 42 framework](https://unit42.paloaltonetworks.com/unit-42-attribution-framework/) · [ICD 203](https://www.dni.gov/files/documents/ICD/ICD-203.pdf) |
 | AI security | [MITRE ATLAS](https://atlas.mitre.org/) · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) · [OWASP GenAI](https://genai.owasp.org/) |
 | Embedded / IoT | [EMB3D](https://emb3d.mitre.org/) · [ESTM](https://estm.mitre.org/) · [ATT&CK for ICS](https://attack.mitre.org/matrices/ics/) |
@@ -70,7 +75,20 @@ This repository makes those distinctions explicit.
 
 ### Intelligence analysis
 - [Attribution, analytic rigor & confidence](docs/attribution-analytics.md)
+- [Probabilistic CTI](docs/probabilistic-cti.md)
+- [Graph & Provenance Hunting](docs/graph-provenance-hunting.md)
 - [Research, CERTs, vendors and learning](docs/research-learning.md)
+
+### OT / cyber-physical intelligence
+- [OT/ICS Threat Intelligence](docs/ot-ics-intelligence.md)
+- CyOTE: CATCH · BAM · OPTIC · ACE
+- ATT&CK for ICS · EMB3D · ESTM
+- OT-ISAC · ETHOS · EE-ISAC
+
+### Detection validation
+- [Instrumented Purple Teaming](docs/instrumented-purple-teaming.md)
+- [Detection engineering & threat hunting](docs/detection-hunting.md)
+- [Threat Hunting Frontier](docs/threat-hunting-frontier.md)
 
 ### Specialized intelligence
 - [Ransomware intelligence](docs/ransomware-intelligence.md)
@@ -92,6 +110,8 @@ catalog/
 ├── vendors.yaml
 ├── datasets.yaml
 ├── specialized.yaml
+├── ot-ics.yaml
+├── probabilistic.yaml
 └── watchlist.yaml
 ```
 
@@ -112,15 +132,13 @@ The static interface in `site/` provides client-side search and filters for cate
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the complete design.
 
-### GitHub Pages activation
+### Live directory
 
-The `site/` UI and deployment workflow are ready. GitHub requires a one-time repository setting before Actions can publish:
+The GitHub Pages interface is published at:
 
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. Run **Deploy GitHub Pages** once from Actions, or push another change to `main`.
+**https://ridd1kulusc0d3r.github.io/Cyber_Threat_intelligence-Internals/**
 
-Until Pages is enabled, the workflow still builds the catalog and exits successfully without attempting deployment.
+It includes full-text search, evidence/lifecycle filters and analyst views for OT/ICS, graph/provenance, probabilistic CTI, detection, ransomware, AI and the research watchlist.
 
 ## Analyst workflow
 
