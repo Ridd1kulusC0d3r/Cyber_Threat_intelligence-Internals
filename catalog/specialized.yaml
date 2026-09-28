@@ -1,0 +1,43 @@
+version: 1
+resources:
+  - name: DISARM Framework
+    url: https://www.disarm.foundation/framework
+    category: influence-operations
+    source_class: C
+    intelligence_levels: [strategic, operational, tactical]
+    access: free
+    lifecycle: active
+    owner: DISARM Foundation
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Describe, share and analyze tactics and techniques used in malign information influence operations.
+    tags: [disinformation, influence-operations, ttp, cognitive-security]
+
+  - name: ProHunter
+    url: https://github.com/xueboQiu/ProHunter
+    category: provenance-hunting
+    source_class: A
+    intelligence_levels: [tactical, technical]
+    access: open-source
+    lifecycle: research
+    owner: Qiu et al.
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Match CTI-derived APT behavior graphs against whole-system provenance graphs for threat hunting.
+    tags: [provenance, apt, graph, hunting]
+
+  - name: CIG Ransomware Information Portal
+    url: https://www.mbsd.jp/cig-ransomware-portal/
+    category: ransomware-intelligence
+    source_class: B
+    intelligence_levels: [operational, tactical]
+    access: free
+    lifecycle: active
+    owner: Mitsui Bussan Secure Directions
+    evidence_level: official
+    verification: verified
+    last_reviewed: "2026-09-27"
+    use: Explore relationships, histories, profiles and ransom-note information for hundreds of ransomware groups.
+    tags: [ransomware, groups, relationships, ransom-notes]
