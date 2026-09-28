@@ -59,20 +59,6 @@ resources:
     notes: Simulation-oriented research evaluated on CIC-IDS2017.
     tags: [federated-learning, zero-trust, privacy, sharing]
 
-  - name: Quantifying cyber threat using Bayesian statistical analysis
-    url: https://doi.org/10.1007/s10207-026-01220-6
-    category: quantitative-cti
-    source_class: A
-    intelligence_levels: [strategic, operational]
-    access: open-access
-    lifecycle: research
-    owner: Thevaratnam and Rezaeifar
-    evidence_level: peer-reviewed
-    verification: verified
-    last_reviewed: "2026-09-27"
-    use: Update system-specific threat probabilities as new CTI evidence arrives using Bayesian analysis.
-    tags: [bayes, risk, cti, prioritization]
-
   - name: False alarms, real damage
     url: https://doi.org/10.1016/j.future.2026.108603
     category: cti-pipeline-security
@@ -130,3 +116,45 @@ resources:
     use: Extract attack behavior graphs and ATT&CK-related structure from CTI reports for research and reconstruction workflows.
     notes: Useful research reference; upstream project activity is historical rather than a current production default.
     tags: [attack-graph, knowledge-graph, cti, nlp]
+
+  - name: CTI-Thinker
+    url: https://doi.org/10.1186/s42400-025-00505-y
+    category: cti-knowledge-graph
+    source_class: A
+    intelligence_levels: [operational, tactical]
+    access: open-access
+    lifecycle: research
+    owner: Yang et al.
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Extract, normalize and reason over ATT&CK-aligned CTI with knowledge graphs and GraphRAG-style retrieval.
+    tags: [graphrag, knowledge-graph, attack, llm, cti]
+
+  - name: APT-CGLP
+    url: https://doi.org/10.1145/3770854.3780275
+    category: provenance-research
+    source_class: A
+    intelligence_levels: [tactical, technical]
+    access: academic
+    lifecycle: research
+    owner: Research publication
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Align provenance graphs with CTI text through contrastive graph-language pre-training for APT hunting.
+    tags: [provenance, graph-language, contrastive-learning, apt, hunting]
+
+  - name: From logs to tactics
+    url: https://doi.org/10.1007/s10207-026-01254-w
+    category: campaign-reconstruction
+    source_class: A
+    intelligence_levels: [operational, tactical, technical]
+    access: open-access
+    lifecycle: research
+    owner: Research publication
+    evidence_level: peer-reviewed
+    verification: verified
+    last_reviewed: "2026-09-28"
+    use: Reconstruct attack narratives from noisy telemetry with unsupervised graph learning, semantic clustering, LLM summarization and ATT&CK mapping.
+    tags: [gnn, unsupervised, attack-reconstruction, attack, llm]
