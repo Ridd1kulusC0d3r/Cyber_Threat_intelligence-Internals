@@ -1,0 +1,136 @@
+version: 1
+resources:
+  - name: L-TDoA / SynGNN attribution concepts
+    url: ""
+    category: attribution-research
+    source_class: C
+    intelligence_levels: [strategic, operational]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate research on timing and syntactic-structure signals for actor attribution.
+    notes: Mentioned in supplied research notes, but no sufficiently authoritative public source was located during this review.
+    tags: [attribution, timing, graph-neural-network]
+
+  - name: KubeRTSec
+    url: ""
+    category: runtime-security
+    source_class: C
+    intelligence_levels: [technical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate eBPF/Kubernetes runtime enforcement research.
+    notes: Keep out of the operational catalog until a primary source or maintained repository is verified.
+    tags: [ebpf, kubernetes, runtime]
+
+  - name: Runtime Radar
+    url: ""
+    category: container-security
+    source_class: B
+    intelligence_levels: [technical]
+    access: unknown
+    lifecycle: watchlist
+    owner: Positive Technologies
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate runtime container security project reportedly based on eBPF/Tetragon.
+    notes: Primary maintained project source was not confirmed in this review.
+    tags: [ebpf, tetragon, containers]
+
+  - name: CTI-HAL
+    url: ""
+    category: cti-dataset
+    source_class: C
+    intelligence_levels: [tactical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate manually annotated ATT&CK-oriented CTI dataset.
+    notes: Verify publication and dataset provenance before promotion.
+    tags: [dataset, llm, attack]
+
+  - name: TTPXHunter
+    url: ""
+    category: cti-extraction
+    source_class: C
+    intelligence_levels: [tactical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate automated TTP extraction research.
+    notes: Verify paper, code and evaluation before promotion.
+    tags: [ttp, nlp, extraction]
+
+  - name: MLADF
+    url: ""
+    category: ai-security
+    source_class: C
+    intelligence_levels: [tactical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate multi-layer adversarial defense framework for LLM-backed CTI interfaces.
+    notes: No sufficiently authoritative primary source was located during this review.
+    tags: [llm, adversarial-ai, cti]
+
+  - name: APT-CGLP
+    url: ""
+    category: provenance-research
+    source_class: C
+    intelligence_levels: [tactical, technical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate cross-modal graph-language matching between provenance telemetry and CTI.
+    notes: Verify peer-reviewed publication and code before promotion.
+    tags: [provenance, graph, language]
+
+  - name: HexAttribution Model
+    url: ""
+    category: attribution-research
+    source_class: C
+    intelligence_levels: [operational, strategic]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate multi-domain attribution framework.
+    notes: The supplied notes describe six domains, but a sufficiently authoritative primary source was not confirmed in this review.
+    tags: [attribution, multidomain]
+
+  - name: Defender's ThreatMesh Framework
+    url: ""
+    category: infrastructure-hunting
+    source_class: C
+    intelligence_levels: [tactical, technical]
+    access: unknown
+    lifecycle: watchlist
+    owner: unknown
+    evidence_level: unverified
+    verification: watchlist
+    last_reviewed: "2026-09-27"
+    use: Candidate framework for structured infrastructure pivots.
+    notes: Verify official project source before promotion.
+    tags: [pivoting, infrastructure, hunting]
